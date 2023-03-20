@@ -83,10 +83,10 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP      &trans  &kp PAGE_UP  &kp PAGE_DOWN     &trans    &trans     &trans
-&trans  &trans  &trans      &trans        &trans        &trans    &kp LEFT     &kp DOWN         &kp UP  &kp RIGHT    &kp UP     &trans
-&trans  &trans  &trans      &trans        &trans        &trans      &trans     &kp HOME        &kp END   &kp LEFT  &kp DOWN  &kp RIGHT
-                            &trans        &trans        &trans      &trans       &trans         &trans
+&trans  &trans  &trans  &kp C_MUTE              &kp C_VOL_DN               &kp C_VOL_UP      &trans  &kp PAGE_UP  &kp PAGE_DOWN     &trans    &trans     &trans
+&trans  &trans  &trans      &trans  &kp LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))    &kp LEFT     &kp DOWN         &kp UP  &kp RIGHT    &kp UP     &trans
+&trans  &trans  &trans      &trans              &kp LC(LEFT)              &kp LC(RIGHT)      &trans     &kp HOME        &kp END   &kp LEFT  &kp DOWN  &kp RIGHT
+                            &trans                    &trans                     &trans      &trans       &trans         &trans
             >;
         };
 
