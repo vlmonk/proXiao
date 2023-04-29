@@ -12,13 +12,6 @@
 		zmk,matrix_transform = &six_column;
 	};
 
-default_transform: keymap_transform_0 {
-		compatible = "zmk,matrix-transform";
-		columns = <1>;
-		rows = <1>;
-		map = <RC(0,0)>;
-	};
-
 	seven_column: keymap_transform_0 {
 		compatible = "zmk,matrix-transform";
 		columns = <12>;
