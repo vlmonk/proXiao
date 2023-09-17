@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define DEF 0
@@ -74,37 +75,37 @@
             //                             | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-                &kp TAB  &kp Q  &kp W             &kp E          &kp R  &kp T        &kp Y      &kp U        &kp I    &kp O     &kp P               &kp EQUAL
-&mt LEFT_CONTROL ESCAPE  &kp A  &kp S           &lt 1 D        &lt 3 F  &kp G        &kp H    &lt 3 J        &kp K    &kp L  &kp SEMI  &mt RCTRL SINGLE_QUOTE
-         &kp LEFT_SHIFT  &kp Z  &kp X             &kp C          &kp V  &kp B        &kp N      &kp M    &kp COMMA  &kp DOT  &kp FSLH         &kp RIGHT_SHIFT
+&kp TAB                  &kp Q  &kp W  &kp E             &kp R          &kp T    &kp Y      &kp U      &kp I        &kp O    &kp P     &kp EQUAL
+&mt LEFT_CONTROL ESCAPE  &kp A  &kp S  &lt 1 D           &lt 3 F        &kp G    &kp H      &lt 3 J    &kp K        &kp L    &kp SEMI  &mt RCTRL SINGLE_QUOTE
+&kp LEFT_SHIFT           &kp Z  &kp X  &kp C             &kp V          &kp B    &kp N      &kp M      &kp COMMA    &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
                                        &kp LEFT_COMMAND  &kp BACKSPACE  &mo 2    &kp ENTER  &kp SPACE  &custom_alt
             >;
         };
 
         numbers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans        &kp KP_DOT        &kp N7  &kp NUMBER_8  &kp NUMBER_9    &kp KP_PLUS           &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &kp MINUS  &kp NUMBER_4  &kp NUMBER_5        &kp N6   &kp KP_MINUS           &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp UNDERSCORE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE  &kp KP_MULTIPLY
-                        &trans  &trans  &trans            &trans        &trans  &kp NUMBER_0
+&bt BT_CLR  &trans  &trans  &trans  &trans  &trans    &kp KP_DOT      &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS    &trans
+&trans      &trans  &trans  &trans  &trans  &trans    &kp MINUS       &kp NUMBER_4  &kp NUMBER_5  &kp N6        &kp KP_MINUS   &trans
+&trans      &trans  &trans  &trans  &trans  &trans    &kp UNDERSCORE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE  &kp KP_MULTIPLY
+                            &trans  &trans  &trans    &trans          &trans        &kp NUMBER_0
             >;
         };
 
         NAV {
             bindings = <
-&kp LG(GRAVE)  &trans  &trans  &kp C_MUTE              &kp C_VOL_DN               &kp C_VOL_UP      &trans  &kp PAGE_UP  &kp PAGE_DOWN     &trans    &trans     &trans
-       &trans  &trans  &trans      &trans  &kp LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))    &kp LEFT     &kp DOWN         &kp UP  &kp RIGHT    &kp UP     &trans
-       &trans  &trans  &trans      &trans              &kp LC(LEFT)              &kp LC(RIGHT)      &trans     &kp HOME        &kp END   &kp LEFT  &kp DOWN  &kp RIGHT
-                                   &trans                    &trans                     &trans     &kp F20      &kp F21         &trans
+&kp LG(GRAVE)  &trans  &trans  &kp C_MUTE  &kp C_VOL_DN              &kp C_VOL_UP                 &trans    &kp PAGE_UP  &kp PAGE_DOWN  &trans     &trans    &trans
+&trans         &trans  &trans  &trans      &kp LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))    &kp LEFT  &kp DOWN     &kp UP         &kp RIGHT  &kp UP    &trans
+&trans         &trans  &trans  &trans      &kp LC(LEFT)              &kp LC(RIGHT)                &trans    &kp HOME     &kp END        &kp LEFT   &kp DOWN  &kp RIGHT
+                               &trans      &trans                    &trans                       &kp F20   &kp F21      &trans
             >;
         };
 
         SYMBOLS {
             bindings = <
-&trans          &kp GRAVE     &kp AT     &kp PIPE        &kp LEFT_BRACE        &kp RIGHT_BRACE    &kp BACKSLASH  &kp ASTERISK         &trans            &trans     &trans  &trans
-&trans  &kp DOUBLE_QUOTES   &kp EXCL   &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS        &kp MINUS      &kp AMPS       &kp HASH            &trans  &kp COLON  &trans
-&trans   &kp SINGLE_QUOTE  &kp TILDE  &kp PERCENT      &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp UNDER     &kp CARET  &kp LESS_THAN  &kp GREATER_THAN     &trans  &trans
-                                           &trans                &trans                 &trans           &trans        &trans         &trans
+&trans  &kp GRAVE          &kp AT     &kp PIPE     &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp BACKSLASH  &kp ASTERISK  &trans         &trans            &trans     &trans
+&trans  &kp DOUBLE_QUOTES  &kp EXCL   &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp MINUS      &kp AMPS      &kp HASH       &trans            &kp COLON  &trans
+&trans  &kp SINGLE_QUOTE   &kp TILDE  &kp PERCENT  &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp UNDER      &kp CARET     &kp LESS_THAN  &kp GREATER_THAN  &trans     &trans
+                                      &trans       &trans                &trans                   &trans         &trans        &trans
             >;
         };
     };
