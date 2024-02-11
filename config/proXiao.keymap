@@ -84,10 +84,10 @@
 
         numbers {
             bindings = <
-&bt BT_CLR  &trans  &trans  &trans  &trans  &trans    &kp KP_DOT      &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS    &trans
-&trans      &trans  &trans  &trans  &trans  &trans    &kp MINUS       &kp NUMBER_4  &kp NUMBER_5  &kp N6        &kp KP_MINUS   &trans
-&trans      &trans  &trans  &trans  &trans  &trans    &kp UNDERSCORE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE  &kp KP_MULTIPLY
-                            &trans  &trans  &trans    &trans          &trans        &kp NUMBER_0
+&bt BT_CLR   &trans  &trans  &trans  &trans  &trans    &kp KP_DOT      &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS    &trans
+&bt BT_SEL 0 &trans  &trans  &trans  &trans  &trans    &kp MINUS       &kp NUMBER_4  &kp NUMBER_5  &kp N6        &kp KP_MINUS   &trans
+&bt BT_SEL 1 &trans  &trans  &trans  &trans  &trans    &kp UNDERSCORE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE  &kp KP_MULTIPLY
+                             &trans  &trans  &trans    &trans          &trans        &kp NUMBER_0
             >;
         };
 
