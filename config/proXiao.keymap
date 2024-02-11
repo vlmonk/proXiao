@@ -13,13 +13,9 @@
 #define RSE 2
 #define ADJ 3
 
-&lt {
-    quick_tap_ms = <220>;
-};
+&lt { quick_tap_ms = <220>; };
 
-&mt {
-    quick_tap_ms = <220>;
-};
+&mt { quick_tap_ms = <220>; };
 
 / {
     macros {
@@ -29,12 +25,9 @@
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp SPACE>;
+            bindings = <&macro_press>, <&kp LALT>, <&macro_tap>, <&kp SPACE>;
         };
+
         grtsgn: grtsgn {
             label = "ZM_grtsgn";
             compatible = "zmk,behavior-macro";
@@ -58,9 +51,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CUSTOM_ALT";
             #binding-cells = <0>;
-            bindings =
-                <&kp RIGHT_ALT>,
-                <&kp LA(SPACE)>;
+            bindings = <&kp RIGHT_ALT>, <&kp LA(SPACE)>;
         };
     };
 
@@ -84,19 +75,19 @@
 
         numbers {
             bindings = <
-&bt BT_CLR   &trans  &trans  &trans  &trans  &trans    &kp KP_DOT      &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS    &trans
-&bt BT_SEL 0 &trans  &trans  &trans  &trans  &trans    &kp MINUS       &kp NUMBER_4  &kp NUMBER_5  &kp N6        &kp KP_MINUS   &trans
-&bt BT_SEL 1 &trans  &trans  &trans  &trans  &trans    &kp UNDERSCORE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE  &kp KP_MULTIPLY
-                             &trans  &trans  &trans    &trans          &trans        &kp NUMBER_0
+&bt BT_CLR    &trans  &trans  &trans  &trans  &trans    &kp KP_DOT      &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS    &trans
+&bt BT_SEL 0  &trans  &trans  &trans  &trans  &trans    &kp MINUS       &kp NUMBER_4  &kp NUMBER_5  &kp N6        &kp KP_MINUS   &trans
+&bt BT_SEL 1  &trans  &trans  &trans  &trans  &trans    &kp UNDERSCORE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE  &kp KP_MULTIPLY
+                              &trans  &trans  &trans    &trans          &trans        &kp NUMBER_0
             >;
         };
 
         NAV {
             bindings = <
-&kp LG(GRAVE)  &trans  &trans  &kp C_MUTE  &kp C_VOL_DN              &kp C_VOL_UP                 &trans    &kp PAGE_UP  &kp PAGE_DOWN  &trans     &trans    &trans
-&trans         &trans  &trans  &trans      &kp LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))    &kp LEFT  &kp DOWN     &kp UP         &kp RIGHT  &kp UP    &trans
-&trans         &trans  &trans  &trans      &kp LC(LEFT)              &kp LC(RIGHT)                &trans    &kp HOME     &kp END        &kp LEFT   &kp DOWN  &kp RIGHT
-                               &trans      &trans                    &trans                       &kp F20   &kp F21      &trans
+&kp LG(GRAVE)  &trans  &trans  &kp C_MUTE  &kp C_VOL_DN              &kp C_VOL_UP                 &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &trans  &trans     &trans    &trans
+&trans         &trans  &trans  &trans      &kp LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))    &kp LEFT            &kp DOWN       &kp UP  &kp RIGHT  &kp UP    &trans
+&trans         &trans  &trans  &trans      &kp LC(LEFT)              &kp LC(RIGHT)                &kp LG(LEFT)        &kp LG(RIGHT)  &trans  &kp LEFT   &kp DOWN  &kp RIGHT
+                               &trans      &trans                    &trans                       &kp F20             &kp F21        &trans
             >;
         };
 
