@@ -67,8 +67,8 @@
 
         SYMBOLS {
             bindings = <
-&trans  &kp GRAVE          &kp AT     &kp PIPE     &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp BACKSLASH  &kp ASTERISK  &trans         &trans            &trans     &trans
-&trans  &kp DOUBLE_QUOTES  &kp EXCL   &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp MINUS      &kp AMPS      &kp HASH       &trans            &kp COLON  &trans
+&trans  &kp GRAVE          &kp AT     &kp PIPE     &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp BACKSLASH  &kp ASTERISK  &kp EQUAL      &kp PLUS          &trans     &trans
+&trans  &kp DOUBLE_QUOTES  &kp EXCL   &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp MINUS      &kp AMPS      &kp HASH       &kp QMARK         &kp COLON  &trans
 &trans  &kp SINGLE_QUOTE   &kp TILDE  &kp PERCENT  &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp UNDER      &kp CARET     &kp LESS_THAN  &kp GREATER_THAN  &trans     &trans
                                       &trans       &trans                &trans                   &trans         &trans        &trans
             >;
