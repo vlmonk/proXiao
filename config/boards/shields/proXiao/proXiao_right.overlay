@@ -6,10 +6,6 @@
 
 #include "proXiao.dtsi"
 
-&default_transform {
-	col-offset = <1>;
-};
-
 &seven_column {
 	col-offset = <6>;
 };
