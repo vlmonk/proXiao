@@ -13,14 +13,13 @@
 #define RSE 2
 #define ADJ 3
 
-&lt { quick_tap_ms = <220>; };
+&lt { quick-tap-ms = <220>; };
 
-&mt { quick_tap_ms = <220>; };
+&mt { quick-tap-ms = <220>; };
 
 / {
     macros {
         numdot: numdot {
-            label = "ZM_numdot";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
@@ -29,7 +28,6 @@
         };
 
         grtsgn: grtsgn {
-            label = "ZM_grtsgn";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
@@ -49,7 +47,6 @@
     behaviors {
         custom_alt: custom_alt {
             compatible = "zmk,behavior-tap-dance";
-            label = "CUSTOM_ALT";
             #binding-cells = <0>;
             bindings = <&kp RIGHT_ALT>, <&kp LA(SPACE)>;
         };

@@ -5,7 +5,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ZMK_DIR="${SCRIPT_DIR}/.zmk"
 FIRMWARE_DIR="${SCRIPT_DIR}/firmware"
 DOCKER_IMAGE="zmkfirmware/zmk-dev-arm:stable"
-BOARD="seeeduino_xiao_ble"
+BOARD="xiao_ble//zmk"
 CONFIG_DIR="/workspace/zmk-config/config"
 
 init() {

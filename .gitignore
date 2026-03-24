@@ -1,3 +1,4 @@
 .zmk/
 firmware/
+firmware-backup/
 keymap.*
